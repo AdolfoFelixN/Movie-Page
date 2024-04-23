@@ -1,0 +1,44 @@
+.options {
+  position: fixed;
+  font-family: sans-serif;
+  font-size: 22px;
+  width: 15%;
+}
+
+.options h2 {
+  text-align: center;
+  color: #7cb0da;
+}
+
+.options ul {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 0;
+}
+
+.options ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 20px 0 20px 30px;
+  width: fit-content;
+  transition: .3s;
+}
+
+.options ul li:hover{
+  color: #7cb0da;
+}
+
+.options ul li a {
+  text-decoration: none;
+  color: antiquewhite;
+  border-bottom: 1px solid white;
+  margin-left: 10px;
+  transition: .3s;
+}
+
+.options ul li a:hover{
+  color: #7cb0da;
+  border-bottom: 1px solid #7cb0da;
+}
