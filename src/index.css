@@ -1,6 +1,6 @@
 :root {
   *background-color: #0c1218;
-  background-color: #0b1014;
+  background-color: #000000;
   color: white;
 }
 
@@ -16,7 +16,7 @@ body, html{
 
 .sideOptions{
   *background-color: #141e27;
-  background-color: #000000;
+  background-color: #03040c;
   width: 15%;
   display: flex;
   flex-direction: column;
