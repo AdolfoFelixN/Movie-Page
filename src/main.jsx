@@ -18,12 +18,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
       <div className="moviesAvailable">
         <Search />
-        <Principal sectionTitle={"Premieres"} />
         <Principal sectionTitle={"Movies"} />
-        <Principal sectionTitle={"Series"} />
-        <Principal sectionTitle={"Animes"} />
-        <Principal sectionTitle={"Cartoons"} />
-        <Principal sectionTitle={"Kids"} />
+
       </div>
     </div>
   </React.StrictMode>

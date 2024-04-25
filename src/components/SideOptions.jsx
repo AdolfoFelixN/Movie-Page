@@ -23,8 +23,7 @@ export const SideOptions = () => {
       <div className="main-options">
         <button id="hide" onClick={buttonHide}><i className="bi bi-arrow-left-circle"></i></button>
         <p>Main</p>
-        <ul>
-          <Li className={"bi bi-house-fill"} textAnchor={"Home"} />
+        <ul>          
           <Li className={"bi bi-camera-reels-fill"} textAnchor={"Movies"} />
           <Li className={"bi bi-film"} textAnchor={"Series"} />
           <Li className={"bi bi-collection-play-fill"} textAnchor={"Animes"} />

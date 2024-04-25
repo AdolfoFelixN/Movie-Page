@@ -1,0 +1,30 @@
+.controlsContainer{
+    height: 50px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.controlsContainer p{
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#previousPage, #nextPage{
+    display: flex;
+    padding: 0;
+    height: 45px;
+    font-size: 40px;
+    color: #9290FF;    
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    
+}
+
+.controlsContainer button :hover{
+    transition: .2s;
+    opacity: .5;
+}

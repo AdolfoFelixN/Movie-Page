@@ -9,13 +9,14 @@
     font-size: 28px;
     font-weight: 600;
     margin: 20px 0 0 10px;
+    color: #9290FF;
 }
 
 .movies{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .movies::-webkit-scrollbar{
@@ -30,8 +31,10 @@
 .contenido{
     display: flex;
     flex-direction: column;
-    flex: 1 0 14%;
-    margin: 10px;
+    flex: 1 0 16%;
+    gap: 10px;
+    height: 350px;
+    margin: 10px 10px 50px 10px;
     cursor: pointer;
     text-align: center;
     transition: .2s;
