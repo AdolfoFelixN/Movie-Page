@@ -1,18 +1,22 @@
 .modal{
-    width: 75%;
-    height: auto;
-    border: 1px solid white;
+    width: 70%;
+    *height: auto;
+    height: 350px;
     position: fixed;
     top: 10%;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 0px rgba(146,144,255,1);
 }
 
 .imageAndDescription{    
-    height: 450px;
+    height: 350px;
     display: flex;
+    border-radius: 5px;
 }
 
 .imageAndDescription img{
-    height: 450px;
+    height: 350px;
     width: fit-content;
     border-radius: 5px 0 0 5px;
 }
@@ -28,6 +32,24 @@
     background-color: rgba(0, 0, 0, 0.884);
     gap: 25px;
     overflow: auto;
+    height: 350px;
+    border-radius: 0 5px 5px 0;
+}
+
+.closeButton{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #9290FF;
+    border-radius: 0 5px 0 0;
+    padding: 5px 10px;
+    font-size: 35px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.closeButton:hover{    
+    color: white;
 }
 
 .description h3{
