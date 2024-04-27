@@ -1,0 +1,46 @@
+.modal{
+    width: 75%;
+    height: auto;
+    border: 1px solid white;
+    position: fixed;
+    top: 10%;
+}
+
+.imageAndDescription{    
+    height: 450px;
+    display: flex;
+}
+
+.imageAndDescription img{
+    height: 450px;
+    width: fit-content;
+    border-radius: 5px 0 0 5px;
+}
+
+.description{
+    padding: 0 20px 0 20px;
+    font-family: sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: rgba(0, 0, 0, 0.884);
+    gap: 25px;
+    overflow: auto;
+}
+
+.description h3{
+    font-size: 40px;
+    color: #9290FF;
+    margin: 30px 0 0px 0;
+}
+
+.description p{
+    font-size: 20px;
+    margin: 0;
+}
+
+.description p strong{
+    color: #9290FF;
+}

@@ -1,6 +1,7 @@
 import '../styles/principal.css'
 import { useEffect, useState } from "react";
 import { Controls } from './Controls';
+import { Modal } from './Modal';
 
 export const Principal = ({sectionTitle}) => {
   const [data, setData] = useState([])
@@ -17,6 +18,10 @@ export const Principal = ({sectionTitle}) => {
     
   }, [page]);
 
+  
+  const [movieSelected, setMovieSelected] = useState({title: "", imageUrl: "" ,description: "", filmRating: ""})
+  console.log(data)
+
   return (
     <>
       <main className='moviesSection'>      
@@ -24,7 +29,7 @@ export const Principal = ({sectionTitle}) => {
           <p>{sectionTitle}</p>
           <div className="movies">
             {data.map((valor) => (
-              <div className="contenido" key={valor.id}>                
+              <div className="contenido" key={valor.id} onClick={ () => setMovieSelected({title: valor.title, imageUrl: `https://image.tmdb.org/t/p/w500${valor.poster_path}`, description: valor.overview, filmRating: valor.vote_average})}>                 
                 <img src={`https://image.tmdb.org/t/p/w500${valor.poster_path}`} alt={`${valor.title}`} />
                 <li key={valor.id}>{valor.title}</li>
               </div>
@@ -32,9 +37,20 @@ export const Principal = ({sectionTitle}) => {
             ))}
           </div>
         </div>
+
+        <Modal 
+          title={movieSelected.title}
+          description={movieSelected.description}
+          image={movieSelected.imageUrl}     
+          vote={movieSelected.filmRating}     
+        />
+        
       </main>
 
       <Controls page={page} setPage={setPage}/>
     </>
   );
+
+  
+
 };

@@ -15,8 +15,8 @@ nav{
     height: 40px;
     border-radius: 10px;
     margin-right: 10px;
-    background-color: #0F1B24;
-    border: 1px solid #323436;
+    background-color: #061218;
+    border: 1px solid #9090FE;
     font-family: sans-serif;
     font-size: 18px;
     outline: none;
@@ -29,22 +29,22 @@ nav{
     height: 40px;
     border-radius: 100%;
     cursor: pointer;
-    background-color: #141e27;
-    border: 1px solid #7cb0da;
+    background-color: #061218;
+    border: 1px solid #9090FE;
     transition: .3s;
 }
 
 #search-form button:hover{
-    background-color: #7cb0da;
+    background-color: #9090FE;
     border-color: #0b1014;
 }
 
 #search-form button i{
     font-size: 20px;
-    color: #10d5ff;
+    color: #9290FF;
     transition: .2s;
 }
 
 #search-form button i:hover{
-    color: #0b1014;
+    color: #000000;
 }

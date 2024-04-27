@@ -1,3 +1,11 @@
+.moviesSection{
+    position: relative;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .movies-container{
     display: flex;
     flex-direction: column;
@@ -9,7 +17,7 @@
     font-size: 28px;
     font-weight: 600;
     margin: 20px 0 0 10px;
-    color: #9290FF;
+    color: #ffffff;
 }
 
 .movies{
@@ -48,10 +56,11 @@
     list-style: none;
     font-family: sans-serif;
     font-size: 18px;
+    color: #85d8d8;
 }
 
 .contenido img{
     width: 100%;
-    border-radius: 5px;
+    border-radius: 2px;
     height: 100%;
 }
